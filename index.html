@@ -28,8 +28,14 @@
 
   <main>
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
+    <section class="hero"
+      style="background-image: url('https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=2500&auto=format&fit=crop'); background-size: cover; background-position: center; position: relative;">
+      <!-- Overlay for readability -->
+      <div
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(249, 248, 244, 0.85);">
+      </div>
+
+      <div class="container" style="position: relative; z-index: 1;">
         <div class="hero-content fade-in-up">
           <span class="hero-tagline">Self-Driven Learning</span>
           <h1>人生の「選択」を<br>正解にする場所</h1>
@@ -48,19 +54,27 @@
       <div class="container">
         <div class="section-header fade-in-up">
           <h2 class="section-title">私たちが「教えない」理由</h2>
-          <p class="section-desc">知識を流し込むのではなく、対話によって「学ぶ目的」を芽生えさせる。<br>「自律」こそが、学力と幸福を最大化します。</p>
+          <p class="section-desc">正解を教えるのではなく、問いによって「自律」を促す。<br>それが、学力と幸福を最大化する唯一の方法です。</p>
         </div>
-        <div class="grid-2">
-          <div class="card fade-in-up">
-            <h3>主体性が正答率を上げる</h3>
-            <p>
-              文部科学省の調査（平成31年度全国学力・学習状況調査）では、「授業に主体的に取り組んでいる」と回答した生徒ほど正答率が高いことが示されています。「やらされる10時間」より「自ら選んだ1時間」の方が、脳は圧倒的に吸収するのです。
-            </p>
+
+        <!-- Split Layout for Concept -->
+        <div class="split-layout fade-in-up">
+          <div class="text-content">
+            <div class="concept-item mb-5">
+              <h3>主体性が正答率を上げる</h3>
+              <p>
+                文部科学省の調査（平成31年度全国学力・学習状況調査）では、「授業に主体的に取り組んでいる」と回答した生徒ほど正答率が高いことが示されています。「やらされる10時間」より「自ら選んだ1時間」の方が、脳は圧倒的に吸収するのです。
+              </p>
+            </div>
+            <div class="concept-item">
+              <h3>自己決定が人生の質を決める</h3>
+              <p>「所得や学歴よりも、自己決定が幸福感に強い影響を与える」。これは経済産業研究所の研究で証明されています。「親に言われたから」ではなく「自分で決めたから」という納得感が、困難を乗り越える粘り強さを生みます。
+              </p>
+            </div>
           </div>
-          <div class="card fade-in-up">
-            <h3>自己決定が人生の質を決める</h3>
-            <p>「所得や学歴よりも、自己決定が幸福感に強い影響を与える」。これは経済産業研究所の研究で証明されています。「親に言われたから」ではなく「自分で決めたから」という納得感が、困難を乗り越える粘り強さを生みます。
-            </p>
+          <div class="image-content">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop"
+              alt="Growth and Workspace" class="img-fluid rounded-lg shadow-lg">
           </div>
         </div>
       </div>
@@ -71,23 +85,34 @@
       <div class="container">
         <div class="section-header fade-in-up">
           <h2 class="section-title">一生モノの「自走力」を育む</h2>
-          <p class="section-desc">neccoは単なる学習指導ではありません。<br>3つの柱で、自ら動き出すための「自分軸」を確立します。</p>
+          <p class="section-desc">neccoは単なる学習指導ではありません。<br>生活全体に伴走し、自ら動き出すための「自分軸」を確立します。</p>
         </div>
+
+        <!-- Service 3 Columns with Images -->
         <div class="grid-3">
           <div class="card fade-in-up">
-            <div class="card-icon">🌱</div>
-            <h3>対話によるメンタリング</h3>
-            <p>週1回、60〜90分のオーダーメイド1on1。価値観の言語化や志望校選び、学習スケジュールの管理をサポート。コーチング研修を受けた大学生・社会人メンターが伴走します。</p>
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop"
+              alt="Mentoring" class="card-img">
+            <div class="card-body">
+              <h3>対話によるメンタリング</h3>
+              <p>週1回、60〜90分のオーダーメイド1on1。価値観の言語化や志望校選び、学習スケジュールの管理をサポート。コーチング研修を受けた大学生・社会人メンターが伴走します。</p>
+            </div>
           </div>
           <div class="card fade-in-up">
-            <div class="card-icon">📖</div>
-            <h3>自学自習のコーチング</h3>
-            <p>「何を」教えるかではなく、「どう学ぶか」を支援。自分に合った学習リソースを自ら見つけ、自立して学習を進められる状態（自走）へと導きます。</p>
+            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=800&auto=format&fit=crop"
+              alt="Coaching" class="card-img">
+            <div class="card-body">
+              <h3>自学自習のコーチング</h3>
+              <p>「何を」教えるかではなく、「どう学ぶか」を支援。自分に合った学習リソースを自ら見つけ、自立して学習を進められる状態（自走）へと導きます。</p>
+            </div>
           </div>
           <div class="card fade-in-up">
-            <div class="card-icon">💬</div>
-            <h3>24時間チャットサポート</h3>
-            <p>日常の迷いや学習中の疑問に対し、いつでも相談できるラインを開放。孤独になりがちな受験・学習期間中も、常に「相談できる安心感」を提供します。</p>
+            <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=800&auto=format&fit=crop"
+              alt="Support" class="card-img">
+            <div class="card-body">
+              <h3>24時間チャットサポート</h3>
+              <p>日常の迷いや学習中の疑問に対し、いつでも相談できるラインを開放。孤独になりがちな受験・学習期間中も、常に「相談できる安心感」を提供します。</p>
+            </div>
           </div>
         </div>
       </div>
@@ -198,12 +223,17 @@
     <section class="section profile-section">
       <div class="container">
         <div class="profile-container fade-in-up">
-          <!-- <img src="" alt="Ayumu Imai" class="profile-img-placeholder" /> -->
-          <!-- Placeholder for image, can be replaced later -->
-          <div class="profile-img-placeholder"></div>
-          <div>
+          <div class="profile-img-wrapper">
+            <img src="/assets/ayumu-profile.png" alt="Ayumu Imai" class="profile-img" />
+          </div>
+          <div class="profile-text">
             <h3 style="margin-bottom: 16px;">マナビノネ代表：今井 歩夢</h3>
-            <p>「necco」は、子供たちが自律し、自分の人生を自分で選べるようになるための場所です。偏差値だけでなく、学習を通じて得られる「納得感」と「生きる力」を大切にしています。</p>
+            <p style="font-size: 0.95rem; line-height: 1.9; color: #444;">
+              武蔵野大学アントレプレナーシップ学部在学中。<br>
+              高校時代にゼロから卒業イベントを統括した経験や、複数のビジネスコンテストへの挑戦を経て、「自ら選び、決めること」の重要性を痛感。<br><br>
+              現在は、高等学校の外部講師事業『edaha』の活動として高校生のアントレ教育・キャリア教育に従事する傍ら、学歴や所得以上に人の幸福度を左右する「自己決定」を軸とした『necco』を設立。<br>
+              「教えない、伴走者」として、生徒一人ひとりの自走を支援している。
+            </p>
           </div>
         </div>
       </div>
